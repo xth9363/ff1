@@ -1,6 +1,6 @@
 import redis
 
-HOST = 'localhost'
+HOST = 'redis-server'
 PORT = '6379'
 PASSWORD = ''
 
