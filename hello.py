@@ -29,13 +29,3 @@ with app.test_request_context():
     print(url_for("login"))
     print(url_for("login", next="/"))
     print(url_for("profile", username="John Doe"))
-
-
-def config_redis(conf):
-    redis_conf = conf.base
-    _redis_pool_db0 = redis.ConnectionPool(
-        host=redis_conf["host"],
-        port=int(redis_conf["port"]),
-        db=0,
-        password=redis_conf["password"],
-    )
